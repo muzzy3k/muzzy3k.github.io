@@ -75,3 +75,10 @@ body {
 	background-color: #ddd;
 	color: black;
 }
+.centered-list {
+	text-align: center;
+	padding-left: 0;
+}
+.centered-list li {
+	list-style-position: inside;
+}
