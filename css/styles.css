@@ -16,7 +16,7 @@ h2, h3, h4, p {
 }
 
 h2 > a , h3 > a {
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 table, ul { 
@@ -165,8 +165,10 @@ i:hover {
 	background-color: #0F4C75;
 }
 
-.school-table > h2 {
+.school {
 	margin: auto;
+	margin-top: 1rem;
+	margin-bottom: none;
 	width: fit-content;
 	border:#696969 solid 4px;
 	padding: 15px;
