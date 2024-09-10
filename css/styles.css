@@ -210,7 +210,7 @@ h2 > a {
 	background-color: #0F4C75;
 }
 
-.project-cell p {
+.project-cell p~p{
     text-align: left; 
 }
 
@@ -229,3 +229,23 @@ h2 > a {
 	fill: #3282B8;
 }
 
+.table-title {
+	display: block;
+	font-size: 1.5em;
+	margin-top: 0.83em;
+	margin-bottom: 0.83em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+  }
+  
+.table-title2 {
+	display: block;
+	font-size: 1.17em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+	text-align: center;
+}
