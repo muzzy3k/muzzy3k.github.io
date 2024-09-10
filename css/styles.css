@@ -1,8 +1,8 @@
 /* tag selectors */
 body {
 	height: 100%;
-	font-family: "Roboto", sans-serif;
-	margin: 0;
+	font-family: "Gotham Black", sans-serif;
+	margin: auto;
 	background-color: #1B262C;
 	color: #BBE1FA;
 }
@@ -22,6 +22,11 @@ h2 > a , h3 > a {
 table, ul { 
     margin: auto;
 	text-align: center;
+}
+
+.outer {
+	margin-top: 25px;
+	margin-bottom: 50px;
 }
 
 ol {
@@ -53,9 +58,9 @@ a:hover {
 /* adjusts content and spaces evenly to make footer and other content appear at bottom/other places */
 .flex-wrapper {
 	display: flex;
-	min-height: 100vh;
+	min-height: 84vh;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 .project-box {
@@ -84,29 +89,28 @@ i:hover {
 /* Navbar */
 .navbar {
 	background-color: #0F4C75;
-	overflow: hidden;
 	display: flex;
 	justify-content: center;
 	box-shadow: -1px 3px 13px -3px #3282B8;
 	margin-bottom: 1rem;
 	padding: 0;
 }
+
 .navbar a {
 	float: left;
 	color: #BBE1FA;
 	text-align: center;
-	padding: 20px 60px;
+	padding: 10px 60px;
 	text-decoration: none;
-	font-family: "Roboto", sans-serif;
 	font-size: 18px;
 }
+
 .navbar a:hover {
 	background-color: #ddd;
 	color: black;
 }
 
 /* Footer */
-
 .footer {
     width: 100%;
 	margin-top: auto;
@@ -115,6 +119,8 @@ i:hover {
 /* Content */
 .text {
 	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
 	width: 60%;
 	border:#696969 solid 6px;
 	padding: 20px;
@@ -128,6 +134,8 @@ i:hover {
 .greeting {
 	padding-top: 1rem;
 	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
 	width:fit-content;
 	border:#696969 solid 6px;
 	padding: 15px;
@@ -135,29 +143,39 @@ i:hover {
 	background-color: #0F4C75;
 }
 
-.interests {
+.title {
+	margin-bottom: 0px;
+}
+
+.list {
 	margin: auto;
-	width:fit-content;
+	width: 300px;
+	height: 135px;
 	border:#696969 solid 6px;
-	padding: 20px;
+	padding: 15px;
 	border-radius: 30px;
 	background-color: #0F4C75;
 }
 
-.interests ul {
+.list ul {
     display: inline-block; 
     text-align: left; 
-    padding-left: 5px; 
+    padding-left: 0px; 
     list-style-position: inside; 
 }
 
-.interests > h3 {
+.list > h3 {
 	margin-top: 0px;
+}
+
+.list-rows {
+	width: 175px;
 }
 
 .school-table {
 	margin: auto;
-	margin-top: 2rem;
+	margin-top: 25px;
+	margin-bottom: 5px;
 	width: fit-content;
 	border:#696969 solid 6px;
 	padding: 10px;
@@ -167,8 +185,8 @@ i:hover {
 
 .school {
 	margin: auto;
-	margin-top: 1rem;
-	margin-bottom: none;
+	margin-top: 25px;
+	margin-bottom: 0px;
 	width: fit-content;
 	border:#696969 solid 4px;
 	padding: 15px;
@@ -189,8 +207,11 @@ h2 > a {
 	padding-left: 25px;
 	border-radius: 30px;
 	display: inline-block; 
-    text-align: left; 
 	background-color: #0F4C75;
+}
+
+.project-cell p {
+    text-align: left; 
 }
 
 .project-cell #github, .project-cell #cert {
