@@ -24,6 +24,14 @@ table, ul {
 	text-align: center;
 }
 
+caption {
+    font-size: 1.17em;
+    margin-bottom: 12.5px;
+	width: 100%;
+    font-weight: bold;
+	text-align: center;
+}
+
 .outer {
 	margin-top: 25px;
 	margin-bottom: 50px;
@@ -60,7 +68,6 @@ a:hover {
 	display: flex;
 	min-height: 84vh;
 	flex-direction: column;
-	justify-content: flex-start;
 }
 
 .project-box {
@@ -90,6 +97,7 @@ i:hover {
 .navbar {
 	background-color: #0F4C75;
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	box-shadow: -1px 3px 13px -3px #3282B8;
 	margin-bottom: 1rem;
@@ -121,7 +129,7 @@ i:hover {
 	margin: auto;
 	margin-top: 25px;
 	margin-bottom: 25px;
-	width: 60%;
+	width: 35em;
 	border:#696969 solid 6px;
 	padding: 20px;
 	padding-left: 25px;
@@ -131,6 +139,19 @@ i:hover {
 	background-color: #0F4C75;
 }
 
+.hist-text {
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	width: 80em;
+	border:#696969 solid 6px;
+	padding: 20px;
+	padding-left: 25px;
+	border-radius: 30px;
+	display: inline-block; 
+    text-align: left; 
+	background-color: #0F4C75;
+}
 .greeting {
 	padding-top: 1rem;
 	margin: auto;
@@ -147,10 +168,19 @@ i:hover {
 	margin-bottom: 0px;
 }
 
+.outer-list {
+	display: flex;
+	margin: 1em auto 1em auto;
+	justify-content: center;
+	flex-direction: row;
+	gap: 5%;
+}
+
 .list {
+	display: flex;
 	margin: auto;
-	width: 300px;
-	height: 135px;
+	flex-basis: 50%;
+
 	border:#696969 solid 6px;
 	padding: 15px;
 	border-radius: 30px;
@@ -158,7 +188,8 @@ i:hover {
 }
 
 .list ul {
-    display: inline-block; 
+    display: flex;
+	flex-direction: column; 
     text-align: left; 
     padding-left: 0px; 
     list-style-position: inside; 
@@ -198,26 +229,55 @@ h2 > a {
 	color: #BBE1FA;
 }
 
+.projects-table, .certs-table {
+	margin : auto;
+	display: flex;
+	flex-direction: row;
+	gap: 1%;
+}
+
 .project-cell {
+	display: flex;
+	flex-direction: column;
 	margin: auto;
-	margin-left: 1rem;
-	width: 20%;
+	padding: 1em;
+	width: 25em;
+	height: 15em;
 	border:#696969 solid 6px;
-	padding: 20px;
-	padding-left: 25px;
-	border-radius: 30px;
-	display: inline-block; 
+	border-radius: 30px; 
 	background-color: #0F4C75;
 }
 
-.project-cell p~p{
+.project-cell p{
     text-align: left; 
 }
 
-.project-cell .github, .project-cell #cert {
+.cert-cell {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding: 1em;
+	width: 25%;
+	border:#696969 solid 6px;
+	border-radius: 30px; 
+	background-color: #0F4C75;
+}
+
+.cert-cell p{
+    text-align: left; 
+}
+
+.flex-wrapper h2 {
+	margin: 1px auto 1px auto;
+}
+.project-cell .github, .cert-cell #cert {
 	display: inline-block;
     width: 100%;
     text-align: center;
+}
+
+.github:hover {
+    text-decoration: none;
 }
 
 #cert {
