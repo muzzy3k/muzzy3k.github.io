@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-	padding: 1rem;
+	padding: none;
 }
 
 h2, h3, h4, p {
@@ -16,7 +16,12 @@ h2, h3, h4, p {
 }
 
 h2 > a , h3 > a {
+	color: #BBE1FA;
 	text-decoration: underline;
+}
+
+h2 > a {
+	text-decoration: none;
 }
 
 table, ul { 
@@ -55,9 +60,7 @@ a:hover {
 .icons {
 	display: flex;
 }
-
-.github,
-#linkedin {
+.github, #linkedin {
 	color: #BBE1FA;
 	font-size: 2em;
 	text-decoration: none;
@@ -70,6 +73,12 @@ a:hover {
 	flex-direction: column;
 }
 
+.flex-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .project-box {
 	margin: auto;
 }
@@ -77,6 +86,7 @@ a:hover {
 /* Header */
 .header {
 	display: flex;
+	margin: 1em auto 1em auto;
 	flex-direction: column;
 	align-items: center;
 }
@@ -98,6 +108,7 @@ i:hover {
 	background-color: #0F4C75;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
 	box-shadow: -1px 3px 13px -3px #3282B8;
 	margin-bottom: 1rem;
@@ -105,7 +116,6 @@ i:hover {
 }
 
 .navbar a {
-	float: left;
 	color: #BBE1FA;
 	text-align: center;
 	padding: 10px 60px;
@@ -129,7 +139,19 @@ i:hover {
 	margin: auto;
 	margin-top: 25px;
 	margin-bottom: 25px;
-	width: 35em;
+	max-width: 38em;
+	border:#696969 solid 6px;
+	padding: 20px 25px;
+	border-radius: 30px;
+    text-align: left; 
+	background-color: #0F4C75;
+}
+
+.hist-text {
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	width: 92em;
 	border:#696969 solid 6px;
 	padding: 20px;
 	padding-left: 25px;
@@ -139,19 +161,6 @@ i:hover {
 	background-color: #0F4C75;
 }
 
-.hist-text {
-	margin: auto;
-	margin-top: 25px;
-	margin-bottom: 25px;
-	width: 80em;
-	border:#696969 solid 6px;
-	padding: 20px;
-	padding-left: 25px;
-	border-radius: 30px;
-	display: inline-block; 
-    text-align: left; 
-	background-color: #0F4C75;
-}
 .greeting {
 	padding-top: 1rem;
 	margin: auto;
@@ -168,19 +177,21 @@ i:hover {
 	margin-bottom: 0px;
 }
 
-.outer-list {
+.outer-flex {
+	margin-left: 30%;
+	margin-right: 30%;
 	display: flex;
-	margin: 1em auto 1em auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
 	justify-content: center;
-	flex-direction: row;
+	align-items: center;
 	gap: 5%;
 }
 
 .list {
 	display: flex;
 	margin: auto;
-	flex-basis: 50%;
-
+	flex-basis: 30%;
 	border:#696969 solid 6px;
 	padding: 15px;
 	border-radius: 30px;
@@ -199,15 +210,11 @@ i:hover {
 	margin-top: 0px;
 }
 
-.list-rows {
-	width: 175px;
-}
-
 .school-table {
 	margin: auto;
 	margin-top: 25px;
-	margin-bottom: 5px;
-	width: fit-content;
+	margin-bottom: 25px;
+	max-width: 92em;
 	border:#696969 solid 6px;
 	padding: 10px;
 	border-radius: 30px;
@@ -215,9 +222,7 @@ i:hover {
 }
 
 .school {
-	margin: auto;
-	margin-top: 25px;
-	margin-bottom: 0px;
+	margin: 25px auto 0;
 	width: fit-content;
 	border:#696969 solid 4px;
 	padding: 15px;
@@ -225,13 +230,11 @@ i:hover {
 	background-color: #3282B8;
 }
 
-h2 > a {
-	color: #BBE1FA;
-}
-
 .projects-table, .certs-table {
 	margin : auto;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	flex-direction: row;
 	gap: 1%;
 }
@@ -242,13 +245,12 @@ h2 > a {
 	margin: auto;
 	padding: 1em;
 	width: 25em;
-	height: 15em;
 	border:#696969 solid 6px;
 	border-radius: 30px; 
 	background-color: #0F4C75;
 }
 
-.project-cell p{
+.project-cell p {
     text-align: left; 
 }
 
@@ -257,22 +259,22 @@ h2 > a {
 	flex-direction: column;
 	margin: auto;
 	padding: 1em;
-	width: 25%;
+	width: 25em;
 	border:#696969 solid 6px;
 	border-radius: 30px; 
 	background-color: #0F4C75;
 }
 
-.cert-cell p{
+.cert-cell p {
     text-align: left; 
 }
 
 .flex-wrapper h2 {
 	margin: 1px auto 1px auto;
 }
+
 .project-cell .github, .cert-cell #cert {
 	display: inline-block;
-    width: 100%;
     text-align: center;
 }
 
@@ -283,10 +285,6 @@ h2 > a {
 #cert {
 	height: 40px;
 	width: 40px;
-}
-
-.cert-link:hover #cert {
-	fill: #3282B8;
 }
 
 .table-title {
