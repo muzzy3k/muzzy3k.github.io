@@ -74,10 +74,6 @@ a:hover {
 	justify-content: center;
 }
 
-.project-box {
-	margin: auto;
-}
-
 /* Header */
 .header {
 	display: flex;
@@ -178,7 +174,8 @@ i:hover {
 	gap: 5%;
 }
 
-#project-box {
+.project-box {
+	margin: auto;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
