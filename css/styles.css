@@ -207,7 +207,7 @@ i:hover {
 	justify-content: center;
 }
 
-.school-table {
+.school-table1 {
 	margin: auto;
 	margin-top: 25px;
 	margin-bottom: 25px;
@@ -216,12 +216,25 @@ i:hover {
 	padding: 10px;
 	border-radius: 30px;
 	background-color: #0F4C75;
-	overflow-x: auto;
 	display: flex;
     flex-direction: column;
-    align-items: center;
+	align-items: center;
+	overflow-x: auto;
 }
 
+.school-table2 {
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	max-width: 92em;
+	border:#696969 solid 6px;
+	padding: 10px;
+	border-radius: 30px;
+	background-color: #0F4C75;
+	display: flex;
+    flex-direction: column;
+	overflow-x: auto;
+}
 
 .school {
 	margin: 25px auto 0;
