@@ -277,7 +277,7 @@ i:hover {
 	margin: 1px auto 1px auto;
 }
 
-.project-cell .github, .project-cell #cert {
+.project-cell .github, .project-cell #cert, .project-cell #paper {
 	display: inline-block;
 	margin-top: 10px;
     text-align: center;
@@ -292,6 +292,10 @@ i:hover {
 	width: 40px;
 }
 
+#paper {
+	height: 32px;
+	width: 32px;
+}
 .table-title {
 	display: block;
 	font-size: 1.5em;
