@@ -1,3 +1,8 @@
+
+/**
+   * 
+   * Initializing function to load global components
+   */
 async function initGlobal() {
     try {
         await loadComponent('components/navbar.html', 'navbar');
@@ -7,6 +12,12 @@ async function initGlobal() {
     }
 }
 
+
+/**
+   * 
+   * Function to load component based on path and elementid
+   * @para {string, string} path, id of element
+   */
 async function loadComponent(url, elementId) {
     try {
         const response = await fetch(url);
@@ -20,4 +31,5 @@ async function loadComponent(url, elementId) {
     }
 }
 
+// Initialize global components
 window.addEventListener("load", initGlobal);
