@@ -1,32 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education</title>
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-    
-    <!-- Custom JS -->
-    <script src="js/global.js"></script>
-</head>
-
-<body>
-    <header id="header">
-        <nav id="navbar"></nav>
-    </header>
-    <main>
-        <div class="flex-wrapper">
-            <h2>History</h2>
-            <div class="flex-box">
-                <p class = "hist-text">During my first two years of college, I attended Albright College. I was still unsure about my career path at the time and 
-                    started off as a Chemistry Major. I became professionally involved with the gaming industry shortly after and switched my major to Game 
-                    and Simulation Development. That was my first exposure to Computer Science and I knew that it was my future. Eventually, I was enticed 
-                    by the strong Computer Science program at Elizabethtown College and transferred there to finish my education.
-                </p>
-            </div>
-            <h2 class ="school"><a href="https://www.etown.edu/" target="_blank">Elizabethtown College</a></h2>
+<h2 class ="school"><a href="https://www.etown.edu/" target="_blank">Elizabethtown College</a></h2>
             <div class="school-table1">
                 <h3>Major: <a href="https://catalog.etown.edu/preview_program.php?catoid=39&poid=4760&returnto=1976">Information Systems</a> 
                     Minor: <a href="https://catalog.etown.edu/preview_program.php?catoid=39&poid=4812&returnto=2006">Data Analytics</a></h3>
@@ -131,8 +103,3 @@
                     </tbody>
                 </table>
             </div>
-        </div>
-    </main>
-    <footer id="footer"></footer>
-</body>
-</html>
