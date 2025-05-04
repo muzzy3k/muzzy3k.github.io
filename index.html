@@ -4,17 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Muzahidul Islam | Software Engineer</title>
 
   <!-- Devicon CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/modern.css">
+  
   <!-- Custom JS -->
   <script src="js/global.js"></script>
 </head>
@@ -25,84 +30,115 @@
   </header>
   
   <main>
-    <div class="flex-wrapper">
-      <div class="header">
-        <img src="global-media/profile-pic.jpg" alt="profilepicture">
+    <div class="container">
+      <section class="profile-section">
+        <img src="global-media/profile-pic.jpg" alt="Muzahidul Islam" class="profile-image">
         <h1>Muzahidul Islam</h1>
-        <div id="header-icons">
-          <a class="github" href="https://github.com/muzzy3k" target="_blank">
+        <p class="subtitle">Software Engineer & Data Analyst</p>
+        
+        <div class="social-links">
+          <a class="social-link" href="https://github.com/muzzy3k" target="_blank">
             <i class="devicon-github-original"></i>
           </a>
-          <a id="linkedin" href="https://www.linkedin.com/in/muzislam" target="_blank">
+          <a class="social-link" href="https://www.linkedin.com/in/muzislam" target="_blank">
             <i class="devicon-linkedin-plain"></i>
           </a>
-          <a id="resume" href="files/Muzahidul_Islam_Resume.pdf" target="_blank">
+          <a class="social-link" href="files/Muzahidul_Islam_Resume.pdf" target="_blank">
             <i class="bi bi-file-earmark-person"></i>
           </a>
         </div>
-      </div>
+      </section>
 
-      <h2 id ="greeting">Hello!</h2>
-        <div class="flex-box">
-          <p class="text">I am currently a senior at <a href="https://www.etown.edu" target="_blank">Elizabethtown College</a> studying 
-            <a href="https://catalog.etown.edu/preview_program.php?catoid=39&poid=4760&returnto=1976" target="_blank">Information Systems</a> 
-            and <a href="https://catalog.etown.edu/preview_program.php?catoid=39&poid=4812&returnto=2006" target="_blank">Data Analytics</a>. 
-            I enjoy learning and currently spend my free time gaining new skills in data and software. This past summer I achieved a certificate
-            in <a href="https://www.coursera.org/account/accomplishments/specialization/A4RDE39Q7XM8" target="_blank">Machine Learning Specialization</a>
-            and am also working on a Virtual Reality Specialization. Please check out my <a href ="portfolio.html">Portfolio</a> page to see some of my projects.
-          </p>
-        </div>
-
-        <div id="tables-container">
-          <div class="list">
-            <table>
-              <caption>Interests & Hobbies</caption>
-              <tr>
-                <td>
-                  <ul>
-                    <li>Software Engineering</li>
-                    <li>Web Development</li>
-                    <li>Machine Learning</li>
-                    <li>Virtual Reality</li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
-          </div>              
-
-          <div class="list">
-            <table>
-              <caption>Skills</caption>
-              <tr>
-                <td>
-                  <ul>
-                    <li>SQL</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>C</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>PHP</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li>SAS</li>
-                    <li>R</li>
-                    <li>ChatGPT</li>
-                    <li>Claude</li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
+      <section class="about-section">
+        <h2 class="section-header">About Me</h2>
+        <div class="card">
+          <div class="card-body">
+            <p>I am currently a senior at <a href="https://www.etown.edu" target="_blank">Elizabethtown College</a> studying 
+              <a href="https://catalog.etown.edu/preview_program.php?catoid=39&poid=4760&returnto=1976" target="_blank">Information Systems</a> 
+              and <a href="https://catalog.etown.edu/preview_program.php?catoid=39&poid=4812&returnto=2006" target="_blank">Data Analytics</a>. 
+              I enjoy learning and currently spend my free time gaining new skills in data and software. This past summer I achieved a certificate
+              in <a href="https://www.coursera.org/account/accomplishments/specialization/A4RDE39Q7XM8" target="_blank">Machine Learning Specialization</a>
+              and am also working on a Virtual Reality Specialization.
+            </p>
           </div>
-        </div> 
+        </div>
+      </section>
 
+      <section class="skills-section">
+        <h2 class="section-header">Skills</h2>
+        <div class="skills-container">
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="devicon-python-plain colored" style="font-size: 2.5rem;"></i>
+              <span class="skill-name">Python</span>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-java-plain colored" style="font-size: 2.5rem;"></i>
+              <span class="skill-name">Java</span>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-javascript-plain colored" style="font-size: 2.5rem;"></i>
+              <span class="skill-name">JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-html5-plain colored" style="font-size: 2.5rem;"></i>
+              <span class="skill-name">HTML</span>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-css3-plain colored" style="font-size: 2.5rem;"></i>
+              <span class="skill-name">CSS</span>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-mysql-plain colored" style="font-size: 2.5rem;"></i>
+              <span class="skill-name">SQL</span>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-r-plain colored" style="font-size: 2.5rem;"></i>
+              <span class="skill-name">R</span>
+            </div>
+            <div class="skill-item">
+              <i class="bi bi-bar-chart" style="font-size: 2.5rem; color: #ef4444;"></i>
+              <span class="skill-name">SAS</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="interests-section">
+        <h2 class="section-header">Interests & Hobbies</h2>
+        <div class="card">
+          <div class="card-body">
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="bi bi-code-slash" style="font-size: 2.5rem; color: #3b82f6;"></i>
+                <span class="skill-name">Software Engineering</span>
+              </div>
+              <div class="skill-item">
+                <i class="bi bi-globe" style="font-size: 2.5rem; color: #10b981;"></i>
+                <span class="skill-name">Web Development</span>
+              </div>
+              <div class="skill-item">
+                <i class="bi bi-braces" style="font-size: 2.5rem; color: #f97316;"></i>
+                <span class="skill-name">Machine Learning</span>
+              </div>
+              <div class="skill-item">
+                <i class="bi bi-eyeglasses" style="font-size: 2.5rem; color: #8b5cf6;"></i>
+                <span class="skill-name">Virtual Reality</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="cta-section extra-margin">
+        <div class="card">
+          <div class="card-body text-center">
+            <h3>Check out my projects</h3>
+            <p>View my portfolio to see some of the work I've done</p>
+            <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
 

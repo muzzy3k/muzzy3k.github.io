@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History</title>
+    <title>History | Muzahidul Islam</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modern.css">
     
     <!-- Custom JS -->
     <script src="js/global.js"></script>
@@ -17,69 +25,74 @@
         <nav id="navbar"></nav>
     </header>
     <main>
-        <div class="flex-wrapper">
-            <h2>Journey</h2>
-            <div class="flex-box">
-                <p class = "hist-text">During my first two years of college, I attended Albright College. I was still unsure about my career path at the time and 
-                    started off as a Chemistry Major. I became professionally involved with the gaming industry shortly after and switched my major to Game 
-                    and Simulation Development. That was my first exposure to Computer Science and I knew that it was my future. Eventually, I was enticed 
-                    by the strong Computer Science program at Elizabethtown College and transferred there to finish my education.
-                </p>
+        <div class="container">
+            <h2 class="section-header">My Journey</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p>During my first two years of college, I attended Albright College. I was still unsure about my career path at the time and 
+                        started off as a Chemistry Major. I became professionally involved with the gaming industry shortly after and switched my major to Game 
+                        and Simulation Development. That was my first exposure to Computer Science and I knew that it was my future. Eventually, I was enticed 
+                        by the strong Computer Science program at Elizabethtown College and transferred there to finish my education.
+                    </p>
+                </div>
             </div>
-            <h2>Esports Profile</h2>
-            <div class="project-box">
-                <table class="project-cell">
-                    <caption>Twitch Career</caption>
-                    <tr>
-                        <td>
-                            <a class="twitch" href="https://www.twitch.tv/muzzy_hs" target="_blank">
-                                <svg viewBox="0 0 24 24" width="24" height="24">
-                                    <path fill="currentColor" d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/>
-                                </svg>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Built a thriving Twitch community with over 20,000 followers through consistent high-level Hearthstone gameplay and educational content. Known for detailed strategic analysis and interactive viewer engagement.</p>
-                        </td>
-                    </tr>
-                </table>
 
-                <table class="project-cell">
-                    <caption>Twitter Presence</caption>
-                    <tr>
-                        <td>
-                            <a class="twitter" href="https://twitter.com/muzzy_hs" target="_blank">
-                                <svg viewBox="0 0 24 24" width="24" height="24">
-                                    <path fill="currentColor" d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"/>
-                                </svg>
+            <h2 class="section-header">Esports Profile</h2>
+            <div class="projects-grid">
+                <div class="card project-card">
+                    <div class="card-header">
+                        <span>Twitch Career</span>
+                        <div class="project-links">
+                            <a href="https://www.twitch.tv/muzzy_hs" target="_blank" class="social-link">
+                                <i class="bi bi-twitch"></i>
                             </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Established a strong Twitter following of 15,000+ followers, sharing game insights, tournament results, and engaging with the Hearthstone community. Platform used for competitive announcements and community interaction.</p>
-                        </td>
-                    </tr>
-                </table>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Built a thriving Twitch community with over 20,000 followers through consistent high-level Hearthstone gameplay and educational content. Known for detailed strategic analysis and interactive viewer engagement.</p>
+                    </div>
+                </div>
 
-                <table class="project-cell">
-                    <caption>Professional Gaming</caption>
-                    <tr>
-                        <td>
-                            <a class="twitter" href="https://escharts.com/players/muzzy" target="_blank">
-                            <svg viewBox="0 0 24 24" width="24" height="24">
-                                <path fill="currentColor" d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
-                            </svg>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Professional Hearthstone player known as Muzzy, competed at the highest level of competitive play. Built a reputation for strategic excellence and consistent tournament performance.</p>
-                        </td>
-                    </tr>
-                </table>
+                <div class="card project-card">
+                    <div class="card-header">
+                        <span>Twitter Presence</span>
+                        <div class="project-links">
+                            <a href="https://twitter.com/muzzy_hs" target="_blank" class="social-link">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Established a strong Twitter following of 15,000+ followers, sharing game insights, tournament results, and engaging with the Hearthstone community. Platform used for competitive announcements and community interaction.</p>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <div class="card-header">
+                        <span>Professional Gaming</span>
+                        <div class="project-links">
+                            <a href="https://escharts.com/players/muzzy" target="_blank" class="social-link">
+                                <i class="bi bi-controller"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Professional Hearthstone player known as Muzzy, competed at the highest level of competitive play. Built a reputation for strategic excellence and consistent tournament performance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h3>Interested in my professional experience?</h3>
+                        <p>Check out my projects or download my resume</p>
+                        <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1rem;">
+                            <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
+                            <a href="files/Muzahidul_Islam_Resume.pdf" target="_blank" class="btn btn-outline">Download Resume</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

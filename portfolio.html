@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio | Muzahidul Islam</title>
 
     <!-- Devicon CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modern.css">
     
     <!-- Custom JS -->
     <script src="js/global.js"></script>
@@ -19,137 +27,102 @@
         <nav id="navbar"></nav>
     </header>
     <main>
-        <div class="flex-wrapper">  
-            <h2>My Projects</h2>
-            <div class="project-box">
-                <table class = "project-cell">
-                    <caption>Etown ClubHub</caption>
-                            <tr>
-                                <td>
-                                    <a class="github" href="https://github.com/Etown-CS310/club_hub" target="_blank">
-                                        <i class="devicon-github-original"></i>
-                                    </a> 
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>A website designed to centralize school clubs and provide easy management and access for different organizations. Each organization gets their own customizable webpage.</p>
-                                </td>
-                            </tr>
-                </table>
-                <table class = "project-cell">
-                    <caption>JayWing Academy</caption>
-                            <tr>
-                                <td>
-                                    <a class="github" href="https://github.com/MSmit99/JayWing-Academy" target="_blank">
-                                        <i class="devicon-github-original"></i>
-                                    </a> 
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>JayWing Academy is a comprehensive tutor management system designed to streamline the process of connecting students with tutors, managing schedules, and facilitating effective learning experiences.</p>
-                                </td>
-                            </tr>
-                </table>
-                <table class = "project-cell">
-                    <caption>WasteNot Pantry</caption>
-                            <tr>
-                                <td>
-                                    <a class="github" href="https://github.com/Etown-Computer-Science-Club/2024-solution-challenge-WasteNot-Pantry" target="_blank">
-                                        <i class="devicon-github-original"></i>
-                                    </a> 
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>A webapp to store food items and expiration dates as well as suggest recipes based on in stock items. Created for 
-                                    <a href="https://developers.google.com/community/gdsc-solution-challenge" target ="_blank"> GDSC 2024 Challenge.</a></p>
-                                </td>
-                            </tr>
-                </table>
-                <table class = "project-cell">
-                    <caption>StockWhisper Analyst</caption>
-                            <tr>
-                                <td>
-                                    <a class="github" href="https://github.com/SamH477/StockWhisperer" target="_blank">
-                                        <i class="devicon-github-original"></i>
-                                    </a> 
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>A chatbot that teaches financial literacy, and a tool to recommend stocks based upon recent news sentiment.</p>
-                                </td>
-                            </tr>
-                </table> 
-            </div>
-            
-            <div class="project-box">
-                <div id="cert-section">    
-                    <h2>Certifications</h2>
-                        <div class="project-box">
-                            <table class = "project-cell">
-                                <caption>Machine Learning Specialization</caption>
-                                        <tr>
-                                            <td>
-                                                <a href="https://www.coursera.org/account/accomplishments/specialization/A4RDE39Q7XM8" target="_blank">
-                                                    <img src ="global-media/cert.svg" alt="cert" id ="cert">
-                                                </a> 
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p>
-                                                    Machine Learning Specialization by Stanford University and DeepLearning.Ai offered on Coursera. This specialization is a series 
-                                                    of 4 courses that covers building ML models with NumPy & scikit-learn, build & train a neural network with TensorFlow & Keras,
-                                                    and more.
-                                            </td>
-                                        </tr>
-                            </table>
+        <div class="container">
+            <h2 class="section-header">My Projects</h2>
+            <div class="projects-grid">
+                <div class="card project-card">
+                    <div class="card-header">
+                        <span>Etown ClubHub</span>
+                        <div class="project-links">
+                            <a href="https://github.com/Etown-CS310/club_hub" target="_blank" class="social-link">
+                                <i class="devicon-github-original"></i>
+                            </a>
                         </div>
+                    </div>
+                    <div class="card-body">
+                        <p>A website designed to centralize school clubs and provide easy management and access for different organizations. Each organization gets their own customizable webpage.</p>
+                    </div>
                 </div>
 
-                <div id="paper-section">
-                    <h2>Papers</h2>
-                    <div class="project-box">
-                        <table class = "project-cell">
-                            <caption>Heart Failure Analysis</caption>
-                                    <tr>
-                                        <td>
-                                            <a href="files/heart_failure_analysis.pdf" target="_blank">
-                                                <img src ="global-media/report.svg" alt="report" id ="paper">
-                                            </a> 
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p>
-                                                This report utilized R Studio and R for analysis of a <a href="https://plos.figshare.com/articles/dataset/Survival_analysis_of_heart_failure_patients_A_case_study/5227684/1?file=8937223" 
-                                                target="_blank">medical dataset</a> to identify factors that are associated with survival(DEATH_EVENT) of patients 
-                                                with heart failure and also to predict the survival of the patient. 9 different ML algos were utilized.
-                                            </p>
-                                        </td>
-                                    </tr>
-                        </table>
-                        <table class = "project-cell">
-                            <caption>Total Family Income Analysis</caption>
-                                    <tr>
-                                        <td>
-                                            <a href="files/Family_income_Analysis.pdf" target="_blank">
-                                                <img src ="global-media/report.svg" alt="report" id ="paper">
-                                            </a> 
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p>
-                                                This report utilized SAS Enterprise Miner for analysis of a <a href="https://simba.isr.umich.edu/data/data.aspx" 
-                                                target="_blank">income dataset</a> to identify factors that are associated with total family income. 14 different ML algos were utilized.
-                                            </p>
-                                        </td>
-                                    </tr>
-                        </table>
+                <div class="card project-card">
+                    <div class="card-header">
+                        <span>JayWing Academy</span>
+                        <div class="project-links">
+                            <a href="https://github.com/MSmit99/JayWing-Academy" target="_blank" class="social-link">
+                                <i class="devicon-github-original"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>JayWing Academy is a comprehensive tutor management system designed to streamline the process of connecting students with tutors, managing schedules, and facilitating effective learning experiences.</p>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <div class="card-header">
+                        <span>Bluejay Quest</span>
+                        <div class="project-links">
+                            <a href="https://github.com/muzzy3k/BluejayQuest" target="_blank" class="social-link">
+                                <i class="devicon-github-original"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>A webapp that lets you explore a 3D map of Etown College Campus and explore it as a 3d model after the schools mascot. There is also a fishing minigame you can play at the schools lake. This project won 1st place for Etown COllege COmputer Science CLubs Spring 2025 Coding Challenge. I leanred skills about game devlopment, web devleopment, 3d modeling, game mechanics, and other theories.</a></p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <h2 class="section-header">Certifications</h2>
+            <div class="projects-grid">
+                <div class="card project-card">
+                    <div class="card-header">
+                        <span>Machine Learning Specialization</span>
+                        <div class="project-links">
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/A4RDE39Q7XM8" target="_blank" class="social-link">
+                                <i class="bi bi-patch-check"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Machine Learning Specialization by Stanford University and DeepLearning.Ai offered on Coursera. This specialization is a series 
+                        of 4 courses that covers building ML models with NumPy & scikit-learn, build & train a neural network with TensorFlow & Keras,
+                        and more.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-header">Papers</h2>
+            <div class="projects-grid">
+                <div class="card project-card">
+                    <div class="card-header">
+                        <span>Heart Failure Analysis</span>
+                        <div class="project-links">
+                            <a href="files/heart_failure_analysis.pdf" target="_blank" class="social-link">
+                                <i class="bi bi-file-earmark-text"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>This report utilized R Studio and R for analysis of a <a href="https://plos.figshare.com/articles/dataset/Survival_analysis_of_heart_failure_patients_A_case_study/5227684/1?file=8937223" 
+                        target="_blank">medical dataset</a> to identify factors that are associated with survival(DEATH_EVENT) of patients 
+                        with heart failure and also to predict the survival of the patient. 9 different ML algos were utilized.</p>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <div class="card-header">
+                        <span>Total Family Income Analysis</span>
+                        <div class="project-links">
+                            <a href="files/Family_income_Analysis.pdf" target="_blank" class="social-link">
+                                <i class="bi bi-file-earmark-text"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>This report utilized SAS Enterprise Miner for analysis of a <a href="https://simba.isr.umich.edu/data/data.aspx" 
+                        target="_blank">income dataset</a> to identify factors that are associated with total family income. 14 different ML algos were utilized.</p>
                     </div>
                 </div>
             </div>
