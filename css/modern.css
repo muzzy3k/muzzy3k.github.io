@@ -653,6 +653,10 @@ a:not(.btn):not(.nav-link):not(.logo-link):not(.social-link):hover:after {
   margin-top: 2.5rem;
 }
 
+.extra-padding {
+  padding: 2.5rem;
+}
+
 .centered-grid {
   max-width: 1000px;
   margin-left: auto;

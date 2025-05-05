@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <title>Tools | Muzahidul Islam</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/modern.css">
+    <link rel="stylesheet" href="css/word-game.css">
+    
+    <!-- Custom JS -->
+    <script src="js/global.js"></script>
+    <script src="js/word-game.js"></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+    <header id="header">
+        <nav id="navbar"></nav>
+    </header>
+    <main id="main-content">
+        <div class="container">
+            <h2 class="section-header extra-margin">Study Tools</h2>
+            <div class="projects-grid centered-grid">
+                <div class="card project-card" id="word-game-card">
+                    <div class="card-header">
+                        <span>Word Definition Matcher</span>
+                        <div class="project-links">
+                            <button id="open-game" class="social-link">
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>A drag-and-drop game to help you match words with their definitions. Perfect for studying vocabulary and concepts. Couldn't find a tool online so I made my own.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="game-container" class="hidden">
+                <div class="container">
+                    <h1>Word Definition Matcher</h1>
+                    
+                    <div class="card extra-padding">
+                        <h2>Enter Words and Definitions</h2>
+                        <div id="input-container">
+                            <!-- Input pairs will be added here -->
+                        </div>
+                        <div class="button-container">
+                            <button id="add-pair" class="btn btn-primary">Add Another Pair</button>
+                            <button id="start-game" class="btn btn-primary">Start Game</button>
+                        </div>
+                    </div>
+
+                    <div id="game-area">
+                        <h2>Match the Definitions</h2>
+                        <div class="button-container">
+                            <button id="restart-game" class="btn btn-primary">Shuffle & Restart</button>
+                            <button id="new-word-set" class="btn btn-outline">New Word Set</button>
+                        </div>
+                        <div class="grid">
+                            <div id="words-container">
+                                <!-- Words will be displayed here -->
+                            </div>
+                            <div id="matches-container">
+                                <!-- Empty blocks for matching will be displayed here -->
+                            </div>
+                            <div id="definitions-container">
+                                <h3>Definitions</h3>
+                                <!-- Definitions bank will be displayed here -->
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button id="check-answers" class="btn btn-primary">Check Answers</button>
+                        </div>
+                        <div id="result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="footer"></footer>
+</body>
+</html> 

@@ -1,0 +1,208 @@
+/* Word Game Styles */
+.hidden {
+    display: none !important;
+}
+
+#game-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    max-height: 95vh;
+    background-color: var(--primary);
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3),
+                0 0 60px rgba(59, 130, 246, 0.1),
+                0 0 90px rgba(59, 130, 246, 0.05);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+#game-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1.5rem;
+    background: var(--gradient-primary);
+    opacity: 0.1;
+    z-index: -1;
+}
+
+#game-container h1 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 2.5rem;
+}
+
+#game-area {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#game-area.visible {
+    display: block;
+    opacity: 1;
+}
+
+/* Input styling */
+.word-pair {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.word-pair input {
+    flex: 1;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    background-color: var(--primary);
+    color: var(--text);
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.word-pair input:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Box styling */
+.word-box, .definition-box, .match-box {
+    padding: 1.25rem;
+    border: 2px solid var(--border);
+    border-radius: 0.75rem;
+    margin-bottom: 1.25rem;
+    min-height: 3.5rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-light);
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.word-box {
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+.definition-box, .match-box {
+    cursor: move;
+    color: var(--text);
+}
+
+.match-box {
+    background-color: var(--primary);
+}
+
+.definition-box:hover, .match-box:hover {
+    border-color: var(--secondary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.definition-box.dragging, .match-box.dragging {
+    opacity: 0.5;
+}
+
+.match-box.highlight {
+    border-color: var(--secondary);
+    background-color: var(--primary-light);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.word-box.matched, .definition-box.matched, .match-box.matched {
+    background-color: rgba(34, 197, 94, 0.1);
+    border-color: var(--success);
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+}
+
+.word-box.incorrect, .definition-box.incorrect, .match-box.incorrect {
+    background-color: rgba(239, 68, 68, 0.1);
+    border-color: var(--error);
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+/* Result text */
+#result {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    background-color: var(--primary-light);
+}
+
+#result.correct {
+    color: var(--success);
+    border: 2px solid var(--success);
+}
+
+#result.incorrect {
+    color: var(--error);
+    border: 2px solid var(--error);
+}
+
+/* Close button */
+#close-game {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 1001;
+    padding: 0.75rem 1.25rem;
+    font-size: 1.1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #game-container {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .word-pair {
+        flex-direction: column;
+    }
+    
+    .button-container {
+        flex-direction: column;
+    }
+    
+    button {
+        width: 100%;
+    }
+} 
